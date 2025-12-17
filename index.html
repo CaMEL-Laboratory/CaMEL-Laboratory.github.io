@@ -49,19 +49,16 @@
         /* 1. 【插入位置】：在 <style> 标签结束前添加按钮样式 */
         /* ========================================== */
         .github-btn {
-            display: inline-block;
-            background-color: #24292e; /* GitHub 经典深灰色 */
-            color: white !important;   /* 强制文字为白色 */
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-        .github-btn:hover {
-            background-color: #444d56; /* 鼠标悬停时变浅 */
-            color: white;
+        display: inline-flex;    /* 必须是 inline-flex */
+        align-items: center;     /* 让小猫和文字垂直居中对齐 */
+        justify-content: center; /* 让内容在按钮中间 */
+        background-color: #24292e; 
+        color: white !important;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        gap: 8px;                /* 图标和文字之间的间距 */
         }
         /* ========================================== */
     </style>

@@ -45,6 +45,25 @@
             padding-top: 20px;
         }
         .camel-emoji { font-style: normal; }
+        /* ========================================== */
+        /* 1. 【插入位置】：在 <style> 标签结束前添加按钮样式 */
+        /* ========================================== */
+        .github-btn {
+            display: inline-block;
+            background-color: #24292e; /* GitHub 经典深灰色 */
+            color: white !important;   /* 强制文字为白色 */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .github-btn:hover {
+            background-color: #444d56; /* 鼠标悬停时变浅 */
+            color: white;
+        }
+        /* ========================================== */
     </style>
 </head>
 <body>
@@ -70,9 +89,10 @@
 
 <div class="section">
     <h2>Connect</h2>
-    <p>📧 <strong>Email:</strong> contact@camel-lab.org (Replace with your lab email)</p>
-    <p>📍 <strong>Location:</strong> Department of Engineering, Your University</p>
-    <p>💻 <strong>GitHub:</strong> <a href="https://github.com/CaMEL-Laboratory" style="color: #0052cc; text-decoration: none;">github.com/CaMEL-Laboratory</a></p>
+    <p>Explore our open-source projects and research code on GitHub:</p>
+    <a href="https://github.com/CaMEL-Laboratory" class="github-btn" target="_blank">
+        View on GitHub
+    </a>
 </div>
 
 <div class="footer">
